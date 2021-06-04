@@ -1,8 +1,11 @@
 package com.kandakatla.users.service;
 
+import javax.validation.constraints.NotBlank;
+
 public class User {
 
 	private int id;
+	@NotBlank(message = "Name is required")
 	private String name;
 	
 	public User() {
